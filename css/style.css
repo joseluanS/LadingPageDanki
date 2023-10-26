@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Open sans';
+}
+
+body,html{
+    height:100%;
+}
+@font-face{
+    src:url('../fonts/OpenSans-Light.ttf');
+    font-family: 'Open sans';
+}
+
+.clear{
+    clear:both;
+}
+header{
+    width:100%;
+    height:70px;
+    background-color:#212343;
+    padding:20px 2%;
+}
+
+.logo{
+   margin:5px 15px;
+}
+
+.center-banner{
+    max-width:1366px;
+    width:100%;
+    height:580px;
+    background-image:url("../images/header_bg.png");
+    background-size:cover;
+    background-position:center;
+    padding:0 2%;
+}
+
+.center-banner > .center{
+    height:100%;
+}
+
+.form{
+    padding:20px;
+    width:400px;
+    height:calc(100% + 30px);
+    background-color:white;
+    float:right;
+    position:relative;
+    top:-15px;
+    border:8px solid rgba(204, 204, 204,0.4);
+    background-clip:padding-box;
+}
+
+.form h3{
+    font-size:21px;
+    color:#bbb;
+    font-weight:normal;
+    margin-bottom:20px;
+}
+
+
+.input-container span,.warning p{
+    display:block;
+    color:#bbb;
+    font-size:16px;
+    margin-bottom:6px;
+}
+
+.input-container input[type=text]{
+    margin-bottom:20px;
+    width:344px;
+    height:55px;
+    border:1px solid #ccc;
+    padding:10px 8px 10px 8px;
+}
+
+.input-container input[type=text]:focus{
+    outline:0;
+}
+
+.warning{
+    margin:20px 0;
+}
+
+.input-submit-container input[type=submit]{
+    width:280px;
+    height:56px;
+    background-color:#363A6D;
+    color:white;
+    font-size:21px;
+    border-right:0;
+    border-left:0;
+    border-top:0;
+    border-bottom:8px solid #4A5097;
+    cursor:pointer;
+}
+
+.input-submit-container{
+    margin-top:70px;
+    text-align:center;
+}
+
+.input-submit-container input[type=submit]:hover{
+    background-color:#323665;
+}
+
+.container-list{
+    padding:20px;
+    margin-left:10px;
+    margin-top:90px;
+    float:left;
+    width:560px;
+    height:271px;
+    background-color:rgba(33, 35, 67,0.7)
+}
+
+.container-list ul{
+    list-style-position:inside;
+}
+
+.container-list li,.container-list h3{
+    color:white;
+    margin-top:20px;
+}
+.container2{
+    background-color:#bbb;
+    max-width:1366px;
+    width:100%;
+    padding:30px 2%;
+}
+
+.container2 .p h3{
+    font-weight: normal;
+    font-size:30px;
+}
+.p{
+    text-align:center;
+    margin:10px auto;
+    max-width:700px;
+    width:100%;
+}
+.container2 .p p{
+    margin:15px auto;
+    max-width:700px;
+    width:100%;
+    text-align:justify;
+}
+
+.arrow{
+    background-image:url('../images/arrow.png');
+    width:45px;
+    height:45px;
+    background-size:100% 100%;
+    margin:0 auto;
+    position:relative;
+    top:55px;
+}
+
+
+.section-1{
+    width:100%;
+    padding:0 2%;
+}
+.section-1 h2{
+    font-weight:normal;
+    color:#212343;
+    text-align:center;
+    margin:80px 0;
+}
+
+.container-section{
+    width:100%;
+    padding:0 2%;
+}
+.container-sigle{
+    float:left;
+    text-align:center;
+    width:33.33%;
+}
+
+.container-sigle img{
+    width:60px;
+    margin-bottom:10px;
+}
+
+.container-sigle p{
+    padding:10px 20px;
+    text-align:center;
+}
+
+.rodapé{
+    margin-top:150px;
+    width:100%;
+    border-top:2px solid #888;
+    text-align:center;
+    color:#888;
+    padding:5px 0;
+}
+
+.rodapé p{
+    margin:10px 0;
+}
+
+@media screen and (max-width:1024px){
+
+    .logo{
+        text-align:center;
+    }
+    .center-banner{
+        text-align:center;
+        width:100%;
+        height:auto;
+        padding:40px 2%;
+    }
+    .form{
+        margin-top:30px;
+        padding:10px;
+        width:60%;
+        height:calc(100% + 30px);
+        float:right;
+        top:0;
+        display:inline-block;
+        max-width:400px;
+       
+    }
+
+    .container-list{
+        margin-top:30px;
+        padding:20px 0;
+        display:inline-block;
+        float:left;
+        width:40%;
+        max-width:405px;
+        height:auto;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    .container-list{
+        margin-top:0;
+        display:inline-block;
+        float:none;
+        width:100%;
+    }
+
+    .form{
+        float:none;
+        display:inline-block;
+        width:90%;
+    }
+
+    .container-sigle{
+        float:none;
+        text-align:center;
+        width:100%;
+        display:inline-block;
+        max-width:600px;
+        padding:30px 0;
+    }
+
+    .container2 p{
+        padding-right:4%;
+        padding-left:4%;
+    }
+}
